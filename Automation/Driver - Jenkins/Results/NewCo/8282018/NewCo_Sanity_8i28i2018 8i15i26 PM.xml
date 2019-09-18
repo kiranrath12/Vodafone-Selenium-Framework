@@ -1,0 +1,892 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE RESULT SYSTEM "Result.dtd"[]>
+<?xml-stylesheet type="text/xsl" href="Result.xsl"?>
+<RESULT>
+  <TITLE>
+NewCo_Sanity_8i28i2018 8i15i26 P
+</TITLE>
+  <SUMMARY>
+    <TOTAL>5</TOTAL>
+    <TOTALPASS>
+    </TOTALPASS>
+    <TOTALFAIL>
+    </TOTALFAIL>
+    <TOTALNOTEXECUTED>
+    </TOTALNOTEXECUTED>
+  </SUMMARY>
+  <TESTCASE>
+    <TCID>1</TCID>
+    <NAME>Prepay</NAME>
+    <RESULT>FAIL</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>ExecuteDBQuery_fn</NAME>
+      <RESULT>Pass</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F2</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>DD</NAME>
+        <VALUE>UpdateMSISDN</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Keys</NAME>
+        <VALUE>MSISDN;RowId</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>DB</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Result</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Action</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Tariff_GSM_Source</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Duration_Qty</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>SecondPart</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Database.xls | Data Sheet: ExecuteDBQuery</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>E7Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Query</NAME>
+        <VALUE>update s_order_item set service_num = 'MSISDN' where row_id = 'RowId'</VALUE>
+      </VERIFICATION>
+    </STEPS>
+    <STEPS>
+      <STEPNO>2</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Fail</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>VF_AGENT_RETAIL_FL</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>VF_AGENT_RETAIL_FL</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>Changed as per new changes by TA(test_retail_1 no longer pays via CASH)</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>VF_AGENT_RETAIL_FL</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <DESC>
+      </DESC>
+      <OBJECT>
+      </OBJECT>
+      <OBJNAME>
+      </OBJNAME>
+      <METHOD>
+      </METHOD>
+      <ARGUMENTS>
+      </ARGUMENTS>
+      <IMAGE>20336TCID1.png</IMAGE>
+    </STEPS>
+  </TESTCASE>
+  <TESTCASE>
+    <TCID>1</TCID>
+    <NAME>Prepay</NAME>
+    <RESULT>FAIL</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>ExecuteDBQuery_fn</NAME>
+      <RESULT>Pass</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F2</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>DD</NAME>
+        <VALUE>UpdateMSISDN</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Keys</NAME>
+        <VALUE>MSISDN;RowId</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>DB</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Result</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Action</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Tariff_GSM_Source</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Duration_Qty</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>SecondPart</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Database.xls | Data Sheet: ExecuteDBQuery</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>E7Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Query</NAME>
+        <VALUE>update s_order_item set service_num = 'MSISDN' where row_id = 'RowId'</VALUE>
+      </VERIFICATION>
+    </STEPS>
+    <STEPS>
+      <STEPNO>2</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Fail</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>VF_AGENT_RETAIL_FL</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>VF_AGENT_RETAIL_FL</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>Changed as per new changes by TA(test_retail_1 no longer pays via CASH)</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>VF_AGENT_RETAIL_FL</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <DESC>
+      </DESC>
+      <OBJECT>
+      </OBJECT>
+      <OBJNAME>
+      </OBJNAME>
+      <METHOD>
+      </METHOD>
+      <ARGUMENTS>
+      </ARGUMENTS>
+      <IMAGE>205054TCID1.png</IMAGE>
+    </STEPS>
+  </TESTCASE>
+  <TESTCASE>
+    <TCID>2</TCID>
+    <NAME>PostpayEBU</NAME>
+    <RESULT>FAIL</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Fail</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>2</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>test_agent_nba_04</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>test_agent_nba_04</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <DESC>
+      </DESC>
+      <OBJECT>
+      </OBJECT>
+      <OBJNAME>
+      </OBJNAME>
+      <METHOD>
+      </METHOD>
+      <ARGUMENTS>
+      </ARGUMENTS>
+      <IMAGE>21920TCID2.png</IMAGE>
+    </STEPS>
+  </TESTCASE>
+  <TESTCASE>
+    <TCID>2</TCID>
+    <NAME>PostpayEBU</NAME>
+    <RESULT>FAIL</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Fail</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>2</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>test_agent_nba_04</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>test_agent_nba_04</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <DESC>
+      </DESC>
+      <OBJECT>
+      </OBJECT>
+      <OBJNAME>
+      </OBJNAME>
+      <METHOD>
+      </METHOD>
+      <ARGUMENTS>
+      </ARGUMENTS>
+      <IMAGE>212727TCID2.png</IMAGE>
+    </STEPS>
+  </TESTCASE>
+  <TESTCASE>
+    <TCID>3</TCID>
+    <NAME>PostpayCBU</NAME>
+    <RESULT>Not Executed</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Not Executed</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>2</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>test_agent_nba_04</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>test_agent_nba_04</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+    </STEPS>
+  </TESTCASE>
+</RESULT>

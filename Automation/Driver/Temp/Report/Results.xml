@@ -1,0 +1,888 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Report
+[
+<!ELEMENT Report (General ,(Doc|BPT)) >
+<!ATTLIST Report ver CDATA #REQUIRED tmZone CDATA #REQUIRED>
+
+<!ELEMENT General ( DocLocation ) >
+<!ATTLIST General productName CDATA #REQUIRED productVer CDATA #REQUIRED os CDATA #REQUIRED host CDATA #REQUIRED qcserver CDATA #IMPLIED qcproject CDATA #IMPLIED  >
+
+<!ELEMENT BPT (DName,Res,DVer?,TSet?,TInst?,NodeArgs,AdditionalInfo*,Doc*) >
+<!ATTLIST BPT rID ID #REQUIRED >
+
+<!ELEMENT Doc (DName,ConfName?,Res,DVer?,TSet?,TInst?,RunType?,DT?,AdditionalInfo*,Step*,DIter*,Step*,Action*,Doc*,Summary?,TestMaintenanceSummary*,NodeArgs?) >
+<!ATTLIST Doc rID ID #REQUIRED type (Test|BC|BPTWrapperTest|Flow|Group) "Test" productName CDATA #REQUIRED BCIter CDATA #IMPLIED >
+
+<!ELEMENT RunType ( #PCDATA )>
+<!ATTLIST RunType fmStep (False|True) "False" batch (False|True) "False" upDesc (False|True) "False" upChk (False|True) "False" upAS (False|True) "False">
+
+<!ELEMENT DName ( #PCDATA ) >
+
+<!ELEMENT ConfName ( #PCDATA ) >
+
+<!ELEMENT Res ( #PCDATA ) >
+
+<!ELEMENT AdditionalInfo (AdditionalDataName,AdditionalDataValue ) >
+
+<!ELEMENT AdditionalDataName ( #PCDATA ) >
+
+<!ELEMENT AdditionalDataValue ( #PCDATA ) >
+
+<!ELEMENT DVer ( #PCDATA ) >
+
+<!ELEMENT TSet ( #PCDATA ) >
+
+<!ELEMENT TInst ( #PCDATA ) >
+
+<!ELEMENT DIter (Step*,Action+,Summary?,NodeArgs)>
+<!ATTLIST DIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT DocLocation ( #PCDATA )>
+
+<!ELEMENT Action (AName,AIter*,(Step|HtmlStep|Action)*,Summary,ActionMaintenanceSummary*,NodeArgs ) >
+<!ATTLIST Action rID ID #REQUIRED>
+
+<!ELEMENT AIter ((Step|HtmlStep|Action)*,Summary?,NodeArgs) >
+<!ATTLIST AIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT AName ( #PCDATA ) >
+
+<!ELEMENT TestMaintenanceSummary (ActionMaintenanceSummary*) >
+<!ATTLIST TestMaintenanceSummary ObjectsAdded CDATA #REQUIRED ObjectsUpdated CDATA #REQUIRED StepsUpdated CDATA #REQUIRED StepsComments CDATA #REQUIRED><!ELEMENT ActionMaintenanceSummary (ObjectChange* ) >
+<!ATTLIST ActionMaintenanceSummary Action CDATA #REQUIRED Objects CDATA #REQUIRED Updated CDATA #REQUIRED LinesTotal CDATA #REQUIRED Added CDATA #REQUIRED LinesUpdated CDATA #REQUIRED>
+
+<!ELEMENT ObjectChange  (Hierarchy, PropertyChangeList* ) >
+<!ATTLIST ObjectChange Operation CDATA #IMPLIED OriginalRepository CDATA #IMPLIED>
+
+<!ELEMENT PropertyChangeList (PropertyDef*) >
+
+<!ELEMENT PropertyDef (OriginalValue, NewValue) >
+<!ATTLIST PropertyDef PropName CDATA #REQUIRED OriginRegularExpression (True|False) "False" NewRegularExpression (True|False) "False" AddedProperty (True|False) "False" >
+
+<!ELEMENT OriginalValue ( #PCDATA )>
+
+<!ELEMENT NewValue ( #PCDATA )>
+
+<!ELEMENT Hierarchy  (ObjectName, Hierarchy*) >
+<!ATTLIST Hierarchy MicClass CDATA #REQUIRED>
+
+<!ELEMENT ObjectName  ( #PCDATA ) >
+
+<!ELEMENT Step (Obj,Details,Time,TimeTick* ,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST Step rID ID #REQUIRED retval CDATA #IMPLIED>
+
+<!ELEMENT HtmlStep (HTML,TimeTick*,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST HtmlStep rID ID #REQUIRED >
+
+<!ELEMENT Obj ( #PCDATA ) >
+<!ATTLIST Obj plainTxt (False|True) "True">
+
+<!ELEMENT Details ( #PCDATA ) >
+<!ATTLIST Details plainTxt (False|True) "True">
+
+<!ELEMENT Time ( #PCDATA ) >
+
+<!ELEMENT HTML ( #PCDATA ) >
+
+<!ELEMENT Disp ( #PCDATA ) >
+
+<!ELEMENT TimeTick ( #PCDATA ) >
+
+<!ELEMENT NodeArgs (Disp,TopPane?,BtmPane?,ExtendedInfo? )>
+<!ATTLIST NodeArgs eType CDATA #REQUIRED icon CDATA #REQUIRED nRep CDATA #REQUIRED UserNote CDATA #IMPLIED filter (False|True) "True">
+<!ATTLIST NodeArgs status (Passed|Failed|Done|Warning|Information) "Done">
+<!ATTLIST NodeArgs iconSel CDATA #IMPLIED nType CDATA #IMPLIED MovieMarker CDATA "">
+<!ATTLIST NodeArgs Source CDATA #IMPLIED SourceLine CDATA #IMPLIED >
+
+<!ELEMENT TopPane (Path)>
+
+<!ELEMENT BtmPane ( (Path|WR)?,ASHilite?)>
+<!ATTLIST BtmPane vType CDATA "HTML">
+
+<!ELEMENT Path ( #PCDATA ) >
+
+<!ELEMENT ASHilite ( #PCDATA ) >
+
+<!ELEMENT WR ( #PCDATA ) >
+
+<!ELEMENT ExtendedInfo ( StepData ) >
+
+<!ATTLIST ExtendedInfo StepType CDATA #REQUIRED>
+<!ELEMENT DT (NodeArgs) >
+<!ATTLIST DT rID ID #REQUIRED>
+
+<!ELEMENT Summary (Param*)>
+<!ATTLIST Summary sTime CDATA #IMPLIED eTime CDATA #IMPLIED passed CDATA #IMPLIED failed CDATA #IMPLIED warnings CDATA #IMPLIED retval CDATA #IMPLIED stopped (False|True) "False" >
+
+<!ELEMENT Param (ParamName,ParamVal)+ >
+<!ATTLIST Param paramInOut (In|Out) "In">
+
+<!ELEMENT ParamName ( #PCDATA ) >
+
+<!ELEMENT ParamVal ( #PCDATA ) >
+
+]
+>
+<Report ver="2.0" tmZone="GMT Standard Time">
+<General productName="QuickTest Professional" productVer="11.00" os="Windows 2008 R2" host="NEWVOE0-QTPWS17"><DocLocation><![CDATA[C:\Sanity Data Bank_1\Automation\Driver]]></DocLocation></General>
+<Doc rID="T1"   productName= "QuickTest Professional"  >
+<DName><![CDATA[Driver]]></DName>
+<Res><![CDATA[Temp]]></Res>
+<DT rID="T2">
+<NodeArgs eType="Table" icon="2" nRep="4" filter="False" >
+<Disp><![CDATA[Run-Time Data Table]]></Disp>
+<BtmPane vType="Table">
+<Path><![CDATA[Default.xls]]></Path>
+</BtmPane>
+</NodeArgs>
+</DT>
+<Action rID="T3">
+<AName><![CDATA[TestSetExec]]></AName>
+<Action rID="T4">
+<AName><![CDATA[ExecuteTestCases]]></AName>
+<Step rID="T5">
+<Obj plainTxt="False" ><![CDATA[Start]]></Obj>
+<Details plainTxt="False" ><![CDATA[Transaction "Start" started.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:43]]></Time>
+<TimeTick>1462543243</TimeTick>
+<NodeArgs eType="Transaction" icon="5" nRep="8" nType="Start Transaction" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[Start]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T6">
+<Obj plainTxt="False" ><![CDATA[LogMessage]]></Obj>
+<Details plainTxt="False" ><![CDATA[============================Start of the TestCase 'MSISDNFree'===============================================]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:43]]></Time>
+<TimeTick>1462543243</TimeTick>
+<NodeArgs eType="User" icon="6" nRep="9" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[LogMessage]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T7">
+<Obj plainTxt="False" ><![CDATA[LogMessage]]></Obj>
+<Details plainTxt="False" ><![CDATA[Executing the GetPendingandOpenOrdersOnAccount function]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:43]]></Time>
+<TimeTick>1462543243</TimeTick>
+<NodeArgs eType="User" icon="6" nRep="10" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[LogMessage]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T8">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'oTCResultdoc'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (895): &quot;	Set TestCases = oTCResultDoc.ChildElementsByPath(&quot;/RESULT/TESTCASE&quot;)&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:45]]></Time>
+<TimeTick>1462543245</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="11" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T9">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'TestCases'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (896): &quot;	lastTCNo = TestCases.Count&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:45]]></Time>
+<TimeTick>1462543245</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="12" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T10">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'TestCases'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (898): &quot;	Set CurrentTC=TestCases.ItemByName(&quot;TESTCASE&quot;,lastTCNo)&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:45]]></Time>
+<TimeTick>1462543245</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="13" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T11">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'CurrentTC'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (901): &quot;	Set Steps = CurrentTC.ChildElements()&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:45]]></Time>
+<TimeTick>1462543245</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="14" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T12">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'Steps'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (902): &quot;	lastStep = Steps.Count&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:45]]></Time>
+<TimeTick>1462543245</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="15" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T13">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'Steps'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (903): &quot;	Set CurrentStep=Steps.ItemByName(&quot;STEPS&quot;,lastStep-3)&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:45]]></Time>
+<TimeTick>1462543245</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="16" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T14">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'CurrentStep'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (918): &quot;	CurrentStep.AddChildElementbyname &quot;IMAGE&quot;,sErrImgName&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:45]]></Time>
+<TimeTick>1462543245</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="17" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T15">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'oTCResultdoc'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (921): &quot;	oTCResultDoc.SaveFile  sResultFileName&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:45]]></Time>
+<TimeTick>1462543245</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="18" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T16">
+<Obj plainTxt="False" ><![CDATA[LogMessage]]></Obj>
+<Details plainTxt="False" ><![CDATA[Executing the LoginToSiebel_fn function]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:45]]></Time>
+<TimeTick>1462543245</TimeTick>
+<NodeArgs eType="User" icon="6" nRep="19" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[LogMessage]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T17">
+<Obj plainTxt="False" ><![CDATA[SystemUtil]]></Obj>
+<Details plainTxt="False" ><![CDATA[SystemUtil]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:49]]></Time>
+<TimeTick>1462543249</TimeTick>
+<Step rID="T18">
+<Obj plainTxt="False" ><![CDATA[Run "IEXPLORE.EXE",3]]></Obj>
+<Details plainTxt="False" ><![CDATA[Run "IEXPLORE.EXE",3]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:49]]></Time>
+<TimeTick>1462543249</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="23" status="Passed" >
+<Disp><![CDATA[Run "IEXPLORE.EXE",3]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="8" nRep="22" status="Passed" >
+<Disp><![CDATA[SystemUtil]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T19">
+<Obj plainTxt="False" ><![CDATA[Certificate Error: Navigation]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:51]]></Time>
+<TimeTick>1462543251</TimeTick>
+<Step rID="T20">
+<Obj plainTxt="False" ><![CDATA[Certificate Error: Navigation]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:51]]></Time>
+<TimeTick>1462543251</TimeTick>
+<Step rID="T21">
+<Obj plainTxt="False" ><![CDATA[Continue to this website.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:51]]></Time>
+<TimeTick>1462543251</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="27" >
+<Disp><![CDATA[Continue to this website.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T22">
+<Obj plainTxt="False" ><![CDATA[Continue to this website.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:52]]></Time>
+<TimeTick>1462543252</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="29" >
+<Disp><![CDATA[Continue to this website.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T23">
+<Obj plainTxt="False" ><![CDATA[Continue to this website.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:52]]></Time>
+<TimeTick>1462543252</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="31" >
+<Disp><![CDATA[Continue to this website.Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T24">
+<Obj plainTxt="False" ><![CDATA[[ Security Warning ].Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:54]]></Time>
+<TimeTick>1462543254</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="33" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[[ Security Warning ].Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T25">
+<Obj plainTxt="False" ><![CDATA[[ Yes ].Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[5/6/2016 - 15:00:55]]></Time>
+<TimeTick>1462543255</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="35" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[[ Yes ].Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="10" nRep="26" >
+<Disp><![CDATA[Certificate Error: Navigation]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="9" nRep="25" >
+<Disp><![CDATA[Certificate Error: Navigation]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T26">
+<Obj plainTxt="False" ><![CDATA[Siebel Call Center]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:00]]></Time>
+<TimeTick>1462543260</TimeTick>
+<Step rID="T27">
+<Obj plainTxt="False" ><![CDATA[Siebel Call Center]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:00]]></Time>
+<TimeTick>1462543260</TimeTick>
+<Step rID="T28">
+<Obj plainTxt="False" ><![CDATA[SWEUserName.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:00]]></Time>
+<TimeTick>1462543260</TimeTick>
+<NodeArgs eType="Replay" icon="14" nRep="39" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[SWEUserName.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T29">
+<Obj plainTxt="False" ><![CDATA[SWEUserName.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:01]]></Time>
+<TimeTick>1462543261</TimeTick>
+<NodeArgs eType="Replay" icon="14" nRep="41" >
+<Disp><![CDATA[SWEUserName.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T30">
+<Obj plainTxt="False" ><![CDATA[SWEUserName.Set]]></Obj>
+<Details plainTxt="False" ><![CDATA["test_retail_1"]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:01]]></Time>
+<TimeTick>1462543261</TimeTick>
+<NodeArgs eType="Replay" icon="14" nRep="43" >
+<Disp><![CDATA[SWEUserName.Set]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T31">
+<Obj plainTxt="False" ><![CDATA[SWEPassword.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:02]]></Time>
+<TimeTick>1462543262</TimeTick>
+<NodeArgs eType="Replay" icon="14" nRep="45" >
+<Disp><![CDATA[SWEPassword.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T32">
+<Obj plainTxt="False" ><![CDATA[SWEPassword.Set]]></Obj>
+<Details plainTxt="False" ><![CDATA["test_retail_1"]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:02]]></Time>
+<TimeTick>1462543262</TimeTick>
+<NodeArgs eType="Replay" icon="14" nRep="47" >
+<Disp><![CDATA[SWEPassword.Set]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T33">
+<Obj plainTxt="False" ><![CDATA[Login.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:04]]></Time>
+<TimeTick>1462543264</TimeTick>
+<NodeArgs eType="Replay" icon="15" nRep="49" >
+<Disp><![CDATA[Login.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T34">
+<Obj plainTxt="False" ><![CDATA[Login.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:04]]></Time>
+<TimeTick>1462543264</TimeTick>
+<NodeArgs eType="Replay" icon="15" nRep="51" >
+<Disp><![CDATA[Login.Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T35">
+<Obj plainTxt="False" ><![CDATA[[ Siebel Call Center ].WaitProperty]]></Obj>
+<Details plainTxt="False" ><![CDATA["attribute/readyState", "complete", "complete", 10000]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:07]]></Time>
+<TimeTick>1462543267</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="54" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[[ Siebel Call Center ].WaitProperty]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="10" nRep="38" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[Siebel Call Center]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="9" nRep="37" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[Siebel Call Center]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T36">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'oTCResultdoc'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (895): &quot;	Set TestCases = oTCResultDoc.ChildElementsByPath(&quot;/RESULT/TESTCASE&quot;)&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:07]]></Time>
+<TimeTick>1462543267</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="55" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T37">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'TestCases'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (896): &quot;	lastTCNo = TestCases.Count&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:07]]></Time>
+<TimeTick>1462543267</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="56" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T38">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'TestCases'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (898): &quot;	Set CurrentTC=TestCases.ItemByName(&quot;TESTCASE&quot;,lastTCNo)&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:07]]></Time>
+<TimeTick>1462543267</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="57" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T39">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'CurrentTC'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (901): &quot;	Set Steps = CurrentTC.ChildElements()&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:07]]></Time>
+<TimeTick>1462543267</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="58" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T40">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'Steps'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (902): &quot;	lastStep = Steps.Count&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:07]]></Time>
+<TimeTick>1462543267</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="59" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T41">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'Steps'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (903): &quot;	Set CurrentStep=Steps.ItemByName(&quot;STEPS&quot;,lastStep-3)&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:07]]></Time>
+<TimeTick>1462543267</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="60" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T42">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'CurrentStep'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (918): &quot;	CurrentStep.AddChildElementbyname &quot;IMAGE&quot;,sErrImgName&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:07]]></Time>
+<TimeTick>1462543267</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="61" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T43">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'oTCResultdoc'<BR>Function file: C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs<BR>Line (921): &quot;	oTCResultDoc.SaveFile  sResultFileName&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:07]]></Time>
+<TimeTick>1462543267</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="62" status="Failed" Source="C:\Sanity Data Bank_1\Automation\Driver\Lib\ReportingResults.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T44">
+<Obj plainTxt="False" ><![CDATA[LogMessage]]></Obj>
+<Details plainTxt="False" ><![CDATA[Executing the SearchAccount_fn function]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:07]]></Time>
+<TimeTick>1462543267</TimeTick>
+<NodeArgs eType="User" icon="6" nRep="63" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[LogMessage]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T45">
+<Obj plainTxt="False" ><![CDATA[Siebel Call Center]]></Obj>
+<Details plainTxt="False" ><![CDATA[SiebApplication]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:08]]></Time>
+<TimeTick>1462543268</TimeTick>
+<Step rID="T46">
+<Obj plainTxt="False" ><![CDATA[PageTabs.GotoScreen]]></Obj>
+<Details plainTxt="False" ><![CDATA["Accounts Screen"]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:08]]></Time>
+<TimeTick>1462543268</TimeTick>
+<NodeArgs eType="Replay" icon="17" nRep="65" >
+<Disp><![CDATA[PageTabs.GotoScreen]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T47">
+<Obj plainTxt="False" ><![CDATA[Accounts]]></Obj>
+<Details plainTxt="False" ><![CDATA[SiebScreen]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:09]]></Time>
+<TimeTick>1462543269</TimeTick>
+<Step rID="T48">
+<Obj plainTxt="False" ><![CDATA[All Accounts]]></Obj>
+<Details plainTxt="False" ><![CDATA[SiebView]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:09]]></Time>
+<TimeTick>1462543269</TimeTick>
+<Step rID="T49">
+<Obj plainTxt="False" ><![CDATA[Account Details]]></Obj>
+<Details plainTxt="False" ><![CDATA[SiebApplet]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:09]]></Time>
+<TimeTick>1462543269</TimeTick>
+<Step rID="T50">
+<Obj plainTxt="False" ><![CDATA[Query]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object exists]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:09]]></Time>
+<TimeTick>1462543269</TimeTick>
+<NodeArgs eType="Replay" icon="21" nRep="69" nType="SiebButton" >
+<Disp><![CDATA[Query]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T51">
+<Obj plainTxt="False" ><![CDATA[[ Siebel Call Center ].SetTimeOut]]></Obj>
+<Details plainTxt="False" ><![CDATA[180]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:09]]></Time>
+<TimeTick>1462543269</TimeTick>
+<NodeArgs eType="Replay" icon="16" nRep="70" >
+<Disp><![CDATA[[ Siebel Call Center ].SetTimeOut]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T52">
+<Obj plainTxt="False" ><![CDATA[Query.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:09]]></Time>
+<TimeTick>1462543269</TimeTick>
+<NodeArgs eType="Replay" icon="21" nRep="71" >
+<Disp><![CDATA[Query.Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T53">
+<Obj plainTxt="False" ><![CDATA[[ Siebel Call Center ].SetTimeOut]]></Obj>
+<Details plainTxt="False" ><![CDATA[180]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:10]]></Time>
+<TimeTick>1462543270</TimeTick>
+<NodeArgs eType="Replay" icon="16" nRep="72" >
+<Disp><![CDATA[[ Siebel Call Center ].SetTimeOut]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T54">
+<Obj plainTxt="False" ><![CDATA[Account no.]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object exists]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:10]]></Time>
+<TimeTick>1462543270</TimeTick>
+<NodeArgs eType="Replay" icon="22" nRep="73" nType="SiebText" >
+<Disp><![CDATA[Account no.]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T55">
+<Obj plainTxt="False" ><![CDATA[Account no.]]></Obj>
+<Details plainTxt="False" ><![CDATA[System error. Debug info: Failed to execute method id 7 with args (()). Reason: HandleAutoRequest.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:11]]></Time>
+<TimeTick>1462543271</TimeTick>
+<Step rID="T56">
+<Obj plainTxt="False" ><![CDATA[Account no.]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>repositoryname = Customer Code<br>classname = SiebText<br>]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:11]]></Time>
+<TimeTick>1462543271</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="75" status="Warning" nType="Description" >
+<Disp><![CDATA[Account no.]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T57">
+<Obj plainTxt="False" ><![CDATA[AnyError]]></Obj>
+<Details plainTxt="False" ><![CDATA[<SPAN class=text><div align=left><dl><b><u>Scenario</u>: </b>AnyError<br><b><u>Defined in</u>: </b>C:\Sanity Data Bank\Automation\Driver\Lib\RecoveryFromAnyError.qrs<br><b><u>Description</u>: </b><br><b><u>Post-recovery operation</u>: </b>Proceed to next action iteration.<br><br><b><u>Activated by trigger</u>:</b><dd><u>Type</u>: Test run error<br><u>The error string</u>: Any error</dd><dt><br><b><u>The current test step details</u>:</b><dd><u>Object</u>: SiebText("Account no.")<br><u>Method</u>: (null)<br><u>Arguments</u>: 7000123684<br><u>Result</u>: Unspecified error
+</dd></dt></dl></div></SPAN>]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:11]]></Time>
+<TimeTick>1462543271</TimeTick>
+<Step rID="T58">
+<Obj plainTxt="False" ><![CDATA[RecoveryFunction1]]></Obj>
+<Details plainTxt="False" ><![CDATA[<SPAN class=text><div align=left><dl><b><u>Call the function</u>:</b> RecoveryFunction1<br><b><u>defined in</u>:</b> C:\Automation\Driver\Lib\RecoveryFunctions.vbs<br><b><u>using the arguments</u>:</b><dd><b>1. </b>The <b>object</b> of the current test step<br><b>2. </b>The <b>method</b> of the current test step<br><b>3. </b>The actual <b>method's arguments</b><br><b>4. </b>The actual <b>method's result</b></dd></dl></div></SPAN>]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:11]]></Time>
+<TimeTick>1462543271</TimeTick>
+<Step rID="T59">
+<Obj plainTxt="False" ><![CDATA[Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[The function is not found]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:11]]></Time>
+<TimeTick>1462543271</TimeTick>
+<NodeArgs eType="Replay" icon="25" nRep="78" status="Warning" >
+<Disp><![CDATA[Error]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="24" nRep="77" status="Warning" nType="Function call operation" >
+<Disp><![CDATA[RecoveryFunction1]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="23" nRep="76" status="Warning" nType="Error" >
+<Disp><![CDATA[AnyError]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="22" nRep="74" status="Failed" nType="Run Error" >
+<Disp><![CDATA[Account no.]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="20" nRep="68" status="Failed" >
+<Disp><![CDATA[Account Details]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="19" nRep="67" status="Failed" >
+<Disp><![CDATA[All Accounts]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="18" nRep="66" status="Failed" >
+<Disp><![CDATA[Accounts]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="16" nRep="64" status="Failed" >
+<Disp><![CDATA[Siebel Call Center]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T60">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[System error. Debug info: Failed to execute method id 7 with args (()). Reason: HandleAutoRequest.<BR>Function file: C:\Sanity Data Bank_1\Automation\NewCo\Resources\Lib\SielbelCommon.vbs<BR>Line (83): &quot;			obj.SetText data&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:11]]></Time>
+<TimeTick>1462543271</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="79" status="Failed" Source="C:\Sanity Data Bank_1\Automation\NewCo\Resources\Lib\SielbelCommon.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T61">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[General run error.<BR>Function file: C:\Sanity Data Bank_1\Automation\NewCo\Resources\Lib\Account.vbs<BR>Line (459): &quot;	SiebApplication(&quot;Siebel Call Center&quot;).SiebScreen(&quot;Accounts&quot;).SiebView(&quot;All Accounts&quot;).SiebApplet(&quot;Account Details&quot;).SiebText(&quot;Account no.&quot;).SiebSetText sAccountNumber&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:11]]></Time>
+<TimeTick>1462543271</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="80" status="Failed" Source="C:\Sanity Data Bank_1\Automation\NewCo\Resources\Lib\Account.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T62">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[General run error.<BR>Function file: C:\Sanity Data Bank_1\Automation\NewCo\Resources\Lib\Account.vbs<BR>Line (460): &quot;	SiebApplication(&quot;Siebel Call Center&quot;).SiebScreen(&quot;Accounts&quot;).SiebView(&quot;All Accounts&quot;).SiebApplet(&quot;Account Details&quot;).SiebButton(&quot;Go&quot;).SiebClick&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:11]]></Time>
+<TimeTick>1462543271</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="81" status="Failed" Source="C:\Sanity Data Bank_1\Automation\NewCo\Resources\Lib\Account.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T63">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[General run error.<BR>Function file: C:\Sanity Data Bank_1\Automation\NewCo\Resources\Lib\Account.vbs<BR>Line (476): &quot;		SiebApplication(&quot;Siebel Call Center&quot;).SiebScreen(&quot;Accounts&quot;).SiebView(&quot;All Accounts&quot;).SiebApplet(&quot;Accounts&quot;).SiebList(&quot;List&quot;).SiebDrillDownColumn &quot;Account name&quot;,0&quot;.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:12]]></Time>
+<TimeTick>1462543272</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="82" status="Failed" Source="C:\Sanity Data Bank_1\Automation\NewCo\Resources\Lib\Account.vbs" SourceLine="-1" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T64" retval="FAIL">
+<Obj plainTxt="False" ><![CDATA[Stop action replay]]></Obj>
+<Details plainTxt="False" ><![CDATA[Run stopped by user.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:12]]></Time>
+<TimeTick>1462543272</TimeTick>
+<NodeArgs eType="General" icon="26" nRep="83" >
+<Disp><![CDATA[Stop action replay]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="5/6/2016 - 15:00:43" eTime="5/6/2016 - 15:01:12" passed="1" failed="21" warnings="3" retval="FAIL" ></Summary>
+<NodeArgs eType="StartAction" icon="4" nRep="7" status="Failed" >
+<Disp><![CDATA[ExecuteTestCases Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T65">
+<AName><![CDATA[ExecuteTestCases]]></AName>
+<Step rID="T66">
+<Obj plainTxt="False" ><![CDATA[Start]]></Obj>
+<Details plainTxt="False" ><![CDATA[Automatically ending transaction "Start" with "Fail" status prior to starting a new transaction "Start" (Total Duration: 29.0621 sec Wasted Time: 1.3004 sec).]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:12]]></Time>
+<TimeTick>1462543272</TimeTick>
+<NodeArgs eType="Transaction" icon="27" nRep="86" status="Warning" nType="End Transaction" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[Start]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T67">
+<Obj plainTxt="False" ><![CDATA[Start]]></Obj>
+<Details plainTxt="False" ><![CDATA[Transaction "Start" started.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:12]]></Time>
+<TimeTick>1462543272</TimeTick>
+<NodeArgs eType="Transaction" icon="5" nRep="87" nType="Start Transaction" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[Start]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T68">
+<Obj plainTxt="False" ><![CDATA[LogMessage]]></Obj>
+<Details plainTxt="False" ><![CDATA[============================Start of the TestCase 'MSISDNFree'===============================================]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:12]]></Time>
+<TimeTick>1462543272</TimeTick>
+<NodeArgs eType="User" icon="6" nRep="88" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[LogMessage]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T69">
+<Obj plainTxt="False" ><![CDATA[LogMessage]]></Obj>
+<Details plainTxt="False" ><![CDATA[Executing the LoginToSiebel_fn function]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:12]]></Time>
+<TimeTick>1462543272</TimeTick>
+<NodeArgs eType="User" icon="6" nRep="89" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[LogMessage]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T70">
+<Obj plainTxt="False" ><![CDATA[SystemUtil]]></Obj>
+<Details plainTxt="False" ><![CDATA[SystemUtil]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:17]]></Time>
+<TimeTick>1462543277</TimeTick>
+<Step rID="T71">
+<Obj plainTxt="False" ><![CDATA[Run "IEXPLORE.EXE",3]]></Obj>
+<Details plainTxt="False" ><![CDATA[Run "IEXPLORE.EXE",3]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:17]]></Time>
+<TimeTick>1462543277</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="93" status="Passed" >
+<Disp><![CDATA[Run "IEXPLORE.EXE",3]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="8" nRep="92" status="Passed" >
+<Disp><![CDATA[SystemUtil]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T72">
+<Obj plainTxt="False" ><![CDATA[Certificate Error: Navigation]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:19]]></Time>
+<TimeTick>1462543279</TimeTick>
+<Step rID="T73">
+<Obj plainTxt="False" ><![CDATA[Certificate Error: Navigation]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:19]]></Time>
+<TimeTick>1462543279</TimeTick>
+<Step rID="T74">
+<Obj plainTxt="False" ><![CDATA[Continue to this website.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:19]]></Time>
+<TimeTick>1462543279</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="97" >
+<Disp><![CDATA[Continue to this website.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T75">
+<Obj plainTxt="False" ><![CDATA[Continue to this website.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:20]]></Time>
+<TimeTick>1462543280</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="99" >
+<Disp><![CDATA[Continue to this website.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T76">
+<Obj plainTxt="False" ><![CDATA[Continue to this website.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:20]]></Time>
+<TimeTick>1462543280</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="101" >
+<Disp><![CDATA[Continue to this website.Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T77">
+<Obj plainTxt="False" ><![CDATA[[ Security Warning ].Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:21]]></Time>
+<TimeTick>1462543281</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="103" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[[ Security Warning ].Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T78">
+<Obj plainTxt="False" ><![CDATA[[ Yes ].Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:22]]></Time>
+<TimeTick>1462543282</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="105" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[[ Yes ].Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="10" nRep="96" >
+<Disp><![CDATA[Certificate Error: Navigation]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="9" nRep="95" >
+<Disp><![CDATA[Certificate Error: Navigation]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T79">
+<Obj plainTxt="False" ><![CDATA[Siebel Call Center]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:28]]></Time>
+<TimeTick>1462543288</TimeTick>
+<Step rID="T80">
+<Obj plainTxt="False" ><![CDATA[Siebel Call Center]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:28]]></Time>
+<TimeTick>1462543288</TimeTick>
+<Step rID="T81">
+<Obj plainTxt="False" ><![CDATA[SWEUserName.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:28]]></Time>
+<TimeTick>1462543288</TimeTick>
+<NodeArgs eType="Replay" icon="14" nRep="121" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[SWEUserName.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T82">
+<Obj plainTxt="False" ><![CDATA[[ Certificate Error: Navigation Blocked ].WaitProperty]]></Obj>
+<Details plainTxt="False" ><![CDATA["attribute/readyState", "complete", "complete", 10000]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:37]]></Time>
+<TimeTick>1462543297</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="124" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[[ Certificate Error: Navigation Blocked ].WaitProperty]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T83">
+<Obj plainTxt="False" ><![CDATA[Stop Run]]></Obj>
+<Details plainTxt="False" ><![CDATA[Run stopped by user.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:37]]></Time>
+<TimeTick>1462543297</TimeTick>
+<NodeArgs eType="General" icon="26" nRep="125" >
+<Disp><![CDATA[Stop Run]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="10" nRep="120" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[Siebel Call Center]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="9" nRep="119" Source="ExecuteTestCases" SourceLine="-1" >
+<Disp><![CDATA[Siebel Call Center]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="5/6/2016 - 15:01:12" eTime="5/6/2016 - 15:01:37" passed="1" failed="0" warnings="1" ></Summary>
+<NodeArgs eType="StartAction" icon="4" nRep="85" status="Warning" >
+<Disp><![CDATA[ExecuteTestCases Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Step rID="T84">
+<Obj plainTxt="False" ><![CDATA[Stop Run]]></Obj>
+<Details plainTxt="False" ><![CDATA[Run stopped by user.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:37]]></Time>
+<TimeTick>1462543297</TimeTick>
+<NodeArgs eType="General" icon="26" nRep="127" >
+<Disp><![CDATA[Stop Run]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="5/6/2016 - 15:00:42" eTime="5/6/2016 - 15:01:37" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="3" nRep="6" status="Failed" >
+<Disp><![CDATA[TestSetExec Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Step rID="T85">
+<Obj plainTxt="False" ><![CDATA[Stop Run]]></Obj>
+<Details plainTxt="False" ><![CDATA[Run stopped by user.]]></Details>
+<Time><![CDATA[5/6/2016 - 15:01:37]]></Time>
+<TimeTick>1462543297</TimeTick>
+<NodeArgs eType="General" icon="28" nRep="129" >
+<Disp><![CDATA[Stop Run]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="5/6/2016 - 15:00:41" eTime="5/6/2016 - 15:01:37" passed="2" failed="21" warnings="4" stopped="True" ><Param ><ParamName><![CDATA[pre]]></ParamName><ParamVal><![CDATA[]]></ParamVal>
+</Param>
+</Summary>
+<NodeArgs eType="StartTest" icon="1" nRep="3" status="Failed" >
+<Disp><![CDATA[Test Driver Summary]]></Disp>
+</NodeArgs>
+</Doc>
+</Report>

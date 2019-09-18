@@ -1,0 +1,2406 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE RESULT SYSTEM "Result.dtd"[]>
+<?xml-stylesheet type="text/xsl" href="Result.xsl"?>
+<RESULT>
+  <TITLE>
+NewCo_Sanity_9i4i2018 3i32i29 A
+</TITLE>
+  <SUMMARY>
+    <TOTAL>5</TOTAL>
+    <TOTALPASS>
+    </TOTALPASS>
+    <TOTALFAIL>5</TOTALFAIL>
+    <TOTALNOTEXECUTED>
+    </TOTALNOTEXECUTED>
+  </SUMMARY>
+  <TESTCASE>
+    <TCID>1</TCID>
+    <NAME>Prepay</NAME>
+    <RESULT>FAIL</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>ExecuteDBQuery_fn</NAME>
+      <RESULT>Pass</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F2</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>DD</NAME>
+        <VALUE>UpdateMSISDN</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Keys</NAME>
+        <VALUE>MSISDN;RowId</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>DB</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Result</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Action</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Tariff_GSM_Source</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Duration_Qty</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>SecondPart</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Database.xls | Data Sheet: ExecuteDBQuery</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>E7Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Query</NAME>
+        <VALUE>update s_order_item set service_num = 'MSISDN' where row_id = 'RowId'</VALUE>
+      </VERIFICATION>
+    </STEPS>
+    <STEPS>
+      <STEPNO>2</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Fail</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>VF_AGENT_RETAIL_FL</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>VF_AGENT_RETAIL_FL</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>Changed as per new changes by TA(test_retail_1 no longer pays via CASH)</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>VF_AGENT_RETAIL_FL</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <DESC>
+      </DESC>
+      <OBJECT>
+      </OBJECT>
+      <OBJNAME>
+      </OBJNAME>
+      <METHOD>
+      </METHOD>
+      <ARGUMENTS>
+      </ARGUMENTS>
+      <IMAGE>33855TCID1.png</IMAGE>
+    </STEPS>
+  </TESTCASE>
+  <TESTCASE>
+    <TCID>1</TCID>
+    <NAME>Prepay</NAME>
+    <RESULT>FAIL</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>ExecuteDBQuery_fn</NAME>
+      <RESULT>Pass</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F2</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>DD</NAME>
+        <VALUE>UpdateMSISDN</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Keys</NAME>
+        <VALUE>MSISDN;RowId</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>DB</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Result</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Action</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Tariff_GSM_Source</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Duration_Qty</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>SecondPart</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Database.xls | Data Sheet: ExecuteDBQuery</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>E7Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Query</NAME>
+        <VALUE>update s_order_item set service_num = 'MSISDN' where row_id = 'RowId'</VALUE>
+      </VERIFICATION>
+    </STEPS>
+    <STEPS>
+      <STEPNO>2</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Fail</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>VF_AGENT_RETAIL_FL</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>VF_AGENT_RETAIL_FL</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>Changed as per new changes by TA(test_retail_1 no longer pays via CASH)</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>VF_AGENT_RETAIL_FL</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <DESC>
+      </DESC>
+      <OBJECT>
+      </OBJECT>
+      <OBJNAME>
+      </OBJNAME>
+      <METHOD>
+      </METHOD>
+      <ARGUMENTS>
+      </ARGUMENTS>
+      <IMAGE>34436TCID1.png</IMAGE>
+    </STEPS>
+  </TESTCASE>
+  <TESTCASE>
+    <TCID>2</TCID>
+    <NAME>PostpayEBU</NAME>
+    <RESULT>FAIL</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Fail</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>2</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>test_agent_nba_04</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>test_agent_nba_04</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <DESC>
+      </DESC>
+      <OBJECT>
+      </OBJECT>
+      <OBJNAME>
+      </OBJNAME>
+      <METHOD>
+      </METHOD>
+      <ARGUMENTS>
+      </ARGUMENTS>
+      <IMAGE>35028TCID2.png</IMAGE>
+    </STEPS>
+  </TESTCASE>
+  <TESTCASE>
+    <TCID>2</TCID>
+    <NAME>PostpayEBU</NAME>
+    <RESULT>FAIL</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Fail</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>2</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>test_agent_nba_04</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>test_agent_nba_04</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <DESC>
+      </DESC>
+      <OBJECT>
+      </OBJECT>
+      <OBJNAME>
+      </OBJNAME>
+      <METHOD>
+      </METHOD>
+      <ARGUMENTS>
+      </ARGUMENTS>
+      <IMAGE>35623TCID2.png</IMAGE>
+    </STEPS>
+  </TESTCASE>
+  <TESTCASE>
+    <TCID>3</TCID>
+    <NAME>PostpayCBU</NAME>
+    <RESULT>FAIL</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Fail</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>2</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>test_agent_nba_04</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>test_agent_nba_04</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <DESC>
+      </DESC>
+      <OBJECT>
+      </OBJECT>
+      <OBJNAME>
+      </OBJNAME>
+      <METHOD>
+      </METHOD>
+      <ARGUMENTS>
+      </ARGUMENTS>
+      <IMAGE>4215TCID3.png</IMAGE>
+    </STEPS>
+  </TESTCASE>
+  <TESTCASE>
+    <TCID>3</TCID>
+    <NAME>PostpayCBU</NAME>
+    <RESULT>FAIL</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Fail</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>2</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>test_agent_nba_04</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>test_agent_nba_04</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_agent_nba_04</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <DESC>
+      </DESC>
+      <OBJECT>
+      </OBJECT>
+      <OBJNAME>
+      </OBJNAME>
+      <METHOD>
+      </METHOD>
+      <ARGUMENTS>
+      </ARGUMENTS>
+      <IMAGE>4812TCID3.png</IMAGE>
+    </STEPS>
+  </TESTCASE>
+  <TESTCASE>
+    <TCID>4</TCID>
+    <NAME>ModifyPrepay</NAME>
+    <RESULT>FAIL</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>RetrieveAccountQTP_fn</NAME>
+      <RESULT>Pass</RESULT>
+      <VERIFICATION>
+        <NAME>Error</NAME>
+        <VALUE>
+        </VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>QTP Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>QTP Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Part Number</NAME>
+        <VALUE>102213</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Siebel Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>ProductName</NAME>
+        <VALUE>SIM package</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Siebel Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>RootProduct</NAME>
+        <VALUE>Mobile phone service</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Query</NAME>
+        <VALUE>SELECT soe.x_vf_customer_code CUSTOMER_CODE,sa2.SERIAL_NUM MSISDN
+from s_org_ext soe, s_org_ext_x soex, s_asset sa2, s_prod_int spi2, s_inv_prof sip, s_contact sc, s_party_per spp
+where sip.ACCNT_ID = soe.row_id
+and soe.row_id = soex.row_id
+and soe.row_id = spp.party_id
+and spp.person_id = sc.row_id
+and soe.x_vf_frs is null
+and UPPER(sc.FST_NAME) like '%ZZ'
+and UPPER(sc.LAST_NAME) like '%ZZ'
+and soe.cust_stat_cd = 'Active'
+and soe.ou_type_cd in ('Consumer','Sole-Trader')
+and soex.attrib_68 = 'Individual'
+and soex.attrib_69 = 'Consumer'
+and sip.payment_type_cd = 'Prepaid'
+and not exists (select 1 from s_order so where so.accnt_id = soe.row_id and ((so.status_cd = 'Open') or (so.status_cd = 'Pending')))
+and not exists (select 1 from s_asset sa, s_prod_int spi where spi.name = 'All Calls Incoming Only Bar' and spi.row_id = sa.prod_id and sa.owner_accnt_id = soe.row_id and sa.status_cd = 'Active' and sa2.row_id = sa.par_asset_id and sip.row_id = sa.bill_profile_id)
+and spi2.name = 'Mobile phone service'
+and spi2.row_id = sa2.prod_id
+and sa2.owner_accnt_id = soe.row_id
+and sa2.serial_num is not null
+and sa2.status_cd = 'Active'
+and soe.created &gt; sysdate-45
+and sip.row_id = sa2.bill_profile_id
+ and exists (select 1 from s_asset sa, s_prod_int spi where spi.name = 'SIM package' and spi.row_id = sa.prod_id and sa.owner_accnt_id = soe.row_id and sip.row_id = sa.bill_profile_id) AND ( ( soe.url NOT LIKE '#B') OR ( soe.url IS NULL ) OR ( soe.url = 'Corrupt')) and sa2.created &gt; sysdate-40 and rownum = 1 order by soe.created desc </VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Siebel Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>MSISDN</NAME>
+        <VALUE>447741801336</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>AccountNo</NAME>
+        <VALUE>7000412031</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>RootProduct</NAME>
+        <VALUE>Mobile phone service</VALUE>
+      </VERIFICATION>
+    </STEPS>
+    <STEPS>
+      <STEPNO>2</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Fail</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>9</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <DESC>
+      </DESC>
+      <OBJECT>
+      </OBJECT>
+      <OBJNAME>
+      </OBJNAME>
+      <METHOD>
+      </METHOD>
+      <ARGUMENTS>
+      </ARGUMENTS>
+      <IMAGE>41433TCID4.png</IMAGE>
+    </STEPS>
+  </TESTCASE>
+  <TESTCASE>
+    <TCID>4</TCID>
+    <NAME>ModifyPrepay</NAME>
+    <RESULT>FAIL</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>RetrieveAccountQTP_fn</NAME>
+      <RESULT>Pass</RESULT>
+      <VERIFICATION>
+        <NAME>Error</NAME>
+        <VALUE>
+        </VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>QTP Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>QTP Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Part Number</NAME>
+        <VALUE>102213</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Siebel Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>ProductName</NAME>
+        <VALUE>SIM package</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Siebel Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>RootProduct</NAME>
+        <VALUE>Mobile phone service</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Query</NAME>
+        <VALUE>SELECT soe.x_vf_customer_code CUSTOMER_CODE,sa2.SERIAL_NUM MSISDN
+from s_org_ext soe, s_org_ext_x soex, s_asset sa2, s_prod_int spi2, s_inv_prof sip, s_contact sc, s_party_per spp
+where sip.ACCNT_ID = soe.row_id
+and soe.row_id = soex.row_id
+and soe.row_id = spp.party_id
+and spp.person_id = sc.row_id
+and soe.x_vf_frs is null
+and UPPER(sc.FST_NAME) like '%ZZ'
+and UPPER(sc.LAST_NAME) like '%ZZ'
+and soe.cust_stat_cd = 'Active'
+and soe.ou_type_cd in ('Consumer','Sole-Trader')
+and soex.attrib_68 = 'Individual'
+and soex.attrib_69 = 'Consumer'
+and sip.payment_type_cd = 'Prepaid'
+and not exists (select 1 from s_order so where so.accnt_id = soe.row_id and ((so.status_cd = 'Open') or (so.status_cd = 'Pending')))
+and not exists (select 1 from s_asset sa, s_prod_int spi where spi.name = 'All Calls Incoming Only Bar' and spi.row_id = sa.prod_id and sa.owner_accnt_id = soe.row_id and sa.status_cd = 'Active' and sa2.row_id = sa.par_asset_id and sip.row_id = sa.bill_profile_id)
+and spi2.name = 'Mobile phone service'
+and spi2.row_id = sa2.prod_id
+and sa2.owner_accnt_id = soe.row_id
+and sa2.serial_num is not null
+and sa2.status_cd = 'Active'
+and soe.created &gt; sysdate-45
+and sip.row_id = sa2.bill_profile_id
+ and exists (select 1 from s_asset sa, s_prod_int spi where spi.name = 'SIM package' and spi.row_id = sa.prod_id and sa.owner_accnt_id = soe.row_id and sip.row_id = sa.bill_profile_id) AND ( ( soe.url NOT LIKE '#B') OR ( soe.url IS NULL ) OR ( soe.url = 'Corrupt')) and sa2.created &gt; sysdate-40 and rownum = 1 order by soe.created desc </VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Siebel Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>MSISDN</NAME>
+        <VALUE>447741801337</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>AccountNo</NAME>
+        <VALUE>7000411995</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>RootProduct</NAME>
+        <VALUE>Mobile phone service</VALUE>
+      </VERIFICATION>
+    </STEPS>
+    <STEPS>
+      <STEPNO>2</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Fail</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>9</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <DESC>
+      </DESC>
+      <OBJECT>
+      </OBJECT>
+      <OBJNAME>
+      </OBJNAME>
+      <METHOD>
+      </METHOD>
+      <ARGUMENTS>
+      </ARGUMENTS>
+      <IMAGE>42038TCID4.png</IMAGE>
+    </STEPS>
+  </TESTCASE>
+  <TESTCASE>
+    <TCID>5</TCID>
+    <NAME>ModifyPostpay</NAME>
+    <RESULT>FAIL</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>RetrieveAccountQTP_fn</NAME>
+      <RESULT>Pass</RESULT>
+      <VERIFICATION>
+        <NAME>Error</NAME>
+        <VALUE>
+        </VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>QTP Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>QTP Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Part Number</NAME>
+        <VALUE>111164</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Siebel Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>ProductName</NAME>
+        <VALUE>24mth Band H Unlmins 16GB Red Extra Plan</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Siebel Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>RootProduct</NAME>
+        <VALUE>PAYM</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Query</NAME>
+        <VALUE>SELECT soe.x_vf_customer_code CUSTOMER_CODE,sa2.SERIAL_NUM MSISDN
+from s_org_ext soe, s_org_ext_x soex, s_asset sa2, s_prod_int spi2, s_inv_prof sip, s_contact sc, s_party_per spp
+where sip.ACCNT_ID = soe.row_id
+and soe.row_id = soex.row_id
+and soe.row_id = spp.party_id
+and spp.person_id = sc.row_id
+and soe.x_vf_frs is null
+and UPPER(sc.FST_NAME) like '%ZZ'
+and UPPER(sc.LAST_NAME) like '%ZZ'
+
+
+
+
+
+and soe.cust_stat_cd = 'Active'
+and soe.ou_type_cd in ('Consumer','Sole-Trader')
+and soex.attrib_68 = 'Individual'
+and soex.attrib_69 = 'Consumer'
+and sip.payment_type_cd = 'Postpaid'
+and not exists (select 1 from s_order so where so.accnt_id = soe.row_id and ((so.status_cd = 'Open') or (so.status_cd = 'Pending')))
+and spi2.name = 'PAYM'
+and spi2.row_id = sa2.prod_id
+and sa2.owner_accnt_id = soe.row_id
+and sa2.serial_num is not null
+and sa2.status_cd = 'Active'
+and sip.row_id = sa2.bill_profile_id
+ and exists (select 1 from s_asset sa, s_prod_int spi where spi.name = '24mth Band H Unlmins 16GB Red Extra Plan' and spi.row_id = sa.prod_id and sa.owner_accnt_id = soe.row_id and sip.row_id = sa.bill_profile_id) AND ( ( soe.url NOT LIKE '#B') OR ( soe.url IS NULL ) OR ( soe.url = 'Corrupt')) and sa2.created &gt; sysdate-40 and rownum = 1 order by soe.created desc </VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Siebel Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>MSISDN</NAME>
+        <VALUE>447741801056</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>AccountNo</NAME>
+        <VALUE>7000411698</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>RootProduct</NAME>
+        <VALUE>PAYM</VALUE>
+      </VERIFICATION>
+    </STEPS>
+    <STEPS>
+      <STEPNO>2</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Fail</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>9</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <DESC>
+      </DESC>
+      <OBJECT>
+      </OBJECT>
+      <OBJNAME>
+      </OBJNAME>
+      <METHOD>
+      </METHOD>
+      <ARGUMENTS>
+      </ARGUMENTS>
+      <IMAGE>42638TCID5.png</IMAGE>
+    </STEPS>
+  </TESTCASE>
+  <TESTCASE>
+    <TCID>5</TCID>
+    <NAME>ModifyPostpay</NAME>
+    <RESULT>FAIL</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>RetrieveAccountQTP_fn</NAME>
+      <RESULT>Pass</RESULT>
+      <VERIFICATION>
+        <NAME>Error</NAME>
+        <VALUE>
+        </VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>QTP Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>QTP Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Part Number</NAME>
+        <VALUE>111164</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Siebel Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>ProductName</NAME>
+        <VALUE>24mth Band H Unlmins 16GB Red Extra Plan</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Siebel Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>RootProduct</NAME>
+        <VALUE>PAYM</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Query</NAME>
+        <VALUE>SELECT soe.x_vf_customer_code CUSTOMER_CODE,sa2.SERIAL_NUM MSISDN
+from s_org_ext soe, s_org_ext_x soex, s_asset sa2, s_prod_int spi2, s_inv_prof sip, s_contact sc, s_party_per spp
+where sip.ACCNT_ID = soe.row_id
+and soe.row_id = soex.row_id
+and soe.row_id = spp.party_id
+and spp.person_id = sc.row_id
+and soe.x_vf_frs is null
+and UPPER(sc.FST_NAME) like '%ZZ'
+and UPPER(sc.LAST_NAME) like '%ZZ'
+
+
+
+
+
+and soe.cust_stat_cd = 'Active'
+and soe.ou_type_cd in ('Consumer','Sole-Trader')
+and soex.attrib_68 = 'Individual'
+and soex.attrib_69 = 'Consumer'
+and sip.payment_type_cd = 'Postpaid'
+and not exists (select 1 from s_order so where so.accnt_id = soe.row_id and ((so.status_cd = 'Open') or (so.status_cd = 'Pending')))
+and spi2.name = 'PAYM'
+and spi2.row_id = sa2.prod_id
+and sa2.owner_accnt_id = soe.row_id
+and sa2.serial_num is not null
+and sa2.status_cd = 'Active'
+and sip.row_id = sa2.bill_profile_id
+ and exists (select 1 from s_asset sa, s_prod_int spi where spi.name = '24mth Band H Unlmins 16GB Red Extra Plan' and spi.row_id = sa.prod_id and sa.owner_accnt_id = soe.row_id and sip.row_id = sa.bill_profile_id) AND ( ( soe.url NOT LIKE '#B') OR ( soe.url IS NULL ) OR ( soe.url = 'Corrupt')) and sa2.created &gt; sysdate-40 and rownum = 1 order by soe.created desc </VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Siebel Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>MSISDN</NAME>
+        <VALUE>447741801045</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>AccountNo</NAME>
+        <VALUE>7000411680</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>RootProduct</NAME>
+        <VALUE>PAYM</VALUE>
+      </VERIFICATION>
+    </STEPS>
+    <STEPS>
+      <STEPNO>2</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Fail</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>9</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Trying for login again</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with test_retail_1</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>login Page is not displayed successfully.</VALUE>
+      </VERIFICATION>
+      <DESC>
+      </DESC>
+      <OBJECT>
+      </OBJECT>
+      <OBJNAME>
+      </OBJNAME>
+      <METHOD>
+      </METHOD>
+      <ARGUMENTS>
+      </ARGUMENTS>
+      <IMAGE>43234TCID5.png</IMAGE>
+    </STEPS>
+  </TESTCASE>
+</RESULT>

@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE RESULT SYSTEM "Result.dtd"[]>
+<?xml-stylesheet type="text/xsl" href="Result.xsl"?>
+<RESULT>
+  <TITLE>
+NewCo_Sanity_9i5i2018 8i33i30 A
+</TITLE>
+  <SUMMARY>
+    <TOTAL>5</TOTAL>
+    <TOTALPASS>
+    </TOTALPASS>
+    <TOTALFAIL>
+    </TOTALFAIL>
+    <TOTALNOTEXECUTED>
+    </TOTALNOTEXECUTED>
+  </SUMMARY>
+  <TESTCASE>
+    <TCID>1</TCID>
+    <NAME>Prepay</NAME>
+    <RESULT>Not Executed</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>ExecuteDBQuery_fn</NAME>
+      <RESULT>Pass</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F2</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>DD</NAME>
+        <VALUE>UpdateMSISDN</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Keys</NAME>
+        <VALUE>MSISDN;RowId</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>DB</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Result</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Action</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Tariff_GSM_Source</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Duration_Qty</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>SecondPart</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Database.xls | Data Sheet: ExecuteDBQuery</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>E7Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Query</NAME>
+        <VALUE>update s_order_item set service_num = 'MSISDN' where row_id = 'RowId'</VALUE>
+      </VERIFICATION>
+    </STEPS>
+    <STEPS>
+      <STEPNO>2</STEPNO>
+      <NAME>LoginToSiebel_fn</NAME>
+      <RESULT>Not Executed</RESULT>
+      <DATA>
+        <NAME>RowNo</NAME>
+        <VALUE>1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>NAME</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Username</NAME>
+        <VALUE>VF_AGENT_RETAIL_FL</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Password</NAME>
+        <VALUE>VF_AGENT_RETAIL_FL</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F5</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F6</NAME>
+        <VALUE>test_retail_1</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F7</NAME>
+        <VALUE>Changed as per new changes by TA(test_retail_1 no longer pays via CASH)</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F8</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F9</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F10</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F11</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F12</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F13</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F14</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F15</NAME>
+        <VALUE>
+        </VALUE>
+      </DATA>
+      <DATA>
+        <NAME>F16</NAME>
+        <VALUE>VF_AGENT_RETAIL_FL</VALUE>
+      </DATA>
+      <DATA>
+        <NAME>Debug Info</NAME>
+        <VALUE>Data File: Account.xls | Data Sheet: LoginToSiebel</VALUE>
+      </DATA>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>CMD minimized.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser activated.</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>browser clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Continue to this website link is clicked</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEUserName edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>SWEPassword edit box is set with VF_AGENT_RETAIL_FL</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Pass</NAME>
+        <VALUE>Login image is clicked</VALUE>
+      </VERIFICATION>
+    </STEPS>
+  </TESTCASE>
+</RESULT>

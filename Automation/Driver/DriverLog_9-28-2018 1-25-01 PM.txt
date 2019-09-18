@@ -1,0 +1,1 @@
+9/28/2018 1:25:16 PM--Query--SELECT * FROM [Testcases$] WHERE  [Type] = 'Sanity'

@@ -1,0 +1,4 @@
+﻿<Properties>
+  <WatchEntry0 value="sAddProduct" />
+  <WatchEntry1 value="objEnv(&quot;TCResult&quot;) &amp; sTestCaseName &amp; &quot;:&quot; &amp; sTCResult &amp;&quot;:&quot; &amp; sAccountNo &amp; &quot;:&quot; &amp; sOrderNo &amp; &quot;;&quot;" />
+</Properties>

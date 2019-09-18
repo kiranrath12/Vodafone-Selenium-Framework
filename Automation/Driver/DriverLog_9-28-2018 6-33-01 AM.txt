@@ -1,0 +1,6 @@
+9/28/2018 6:33:17 AM--Query--SELECT * FROM [Testcases$] WHERE  [Type] = 'Ankita1'
+9/28/2018 6:34:29 AM--C:\VATS Automation Sanity\Automation\Driver\Results\NewCo\9282018\NewCo_Ankita1_9i28i2018 6i33i34 AM.xml Size = 24963
+9/28/2018 6:37:29 AM--C:\VATS Automation Sanity\Automation\Driver\Results\NewCo\9282018\NewCo_Ankita1_9i28i2018 6i33i34 AM.xml Size = 55258
+9/28/2018 6:40:29 AM--C:\VATS Automation Sanity\Automation\Driver\Results\NewCo\9282018\NewCo_Ankita1_9i28i2018 6i33i34 AM.xml Size = 61422
+9/28/2018 6:43:29 AMFile Match Count--1
+9/28/2018 6:46:29 AMFile Match Count--2

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE RESULT SYSTEM "Result.dtd"[]>
+<?xml-stylesheet type="text/xsl" href="Result.xsl"?>
+<RESULT>
+  <TITLE>
+NewCo_Sanity_9i28i2018 2i16i32 P
+</TITLE>
+  <SUMMARY>
+    <TOTAL>1</TOTAL>
+    <TOTALPASS>
+    </TOTALPASS>
+    <TOTALFAIL>1</TOTALFAIL>
+    <TOTALNOTEXECUTED>
+    </TOTALNOTEXECUTED>
+  </SUMMARY>
+  <TESTCASE>
+    <TCID>4</TCID>
+    <NAME>ModifyPrepay</NAME>
+    <RESULT>FAIL</RESULT>
+    <STEPS>
+      <STEPNO>1</STEPNO>
+      <NAME>RetrieveAccountQTP_fn</NAME>
+      <RESULT>Fail</RESULT>
+      <VERIFICATION>
+        <NAME>Error</NAME>
+        <VALUE>
+        </VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>QTP Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>QTP Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Part Number</NAME>
+        <VALUE>102213</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Siebel Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>ProductName</NAME>
+        <VALUE>SIM package</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Siebel Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>RootProduct</NAME>
+        <VALUE>Mobile phone service</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Query</NAME>
+        <VALUE>SELECT soe.x_vf_customer_code CUSTOMER_CODE,sa2.SERIAL_NUM MSISDN
+from s_org_ext soe, s_org_ext_x soex, s_asset sa2, s_prod_int spi2, s_inv_prof sip, s_contact sc, s_party_per spp
+where sip.ACCNT_ID = soe.row_id
+and soe.row_id = soex.row_id
+and soe.row_id = spp.party_id
+and spp.person_id = sc.row_id
+and soe.x_vf_frs is null
+and UPPER(sc.FST_NAME) like '%ZZ'
+and UPPER(sc.LAST_NAME) like '%ZZ'
+and soe.cust_stat_cd = 'Active'
+and soe.ou_type_cd = 'Consumer'
+and soex.attrib_68 = 'Individual'
+and soex.attrib_69 = 'Consumer'
+and sip.payment_type_cd = 'Prepaid'
+and not exists (select 1 from s_order so where so.accnt_id = soe.row_id and ((so.status_cd = 'Open') or (so.status_cd = 'Pending')))
+and spi2.name = 'Mobile phone service'
+and spi2.row_id = sa2.prod_id
+and sa2.owner_accnt_id = soe.row_id
+and sa2.serial_num is not null
+and sa2.status_cd = 'Active'
+and sip.row_id = sa2.bill_profile_id
+ and exists (select 1 from s_asset sa, s_prod_int spi where spi.name = 'SIM package' and spi.row_id = sa.prod_id and sa.owner_accnt_id = soe.row_id and sip.row_id = sa.bill_profile_id) AND ( ( soe.url NOT LIKE '#B') OR ( soe.url IS NULL ) OR ( soe.url = 'Corrupt')) and sa2.created &gt; sysdate-40 and rownum = 1 order by soe.created desc </VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Info</NAME>
+        <VALUE>Siebel Database connection  established</VALUE>
+      </VERIFICATION>
+      <VERIFICATION>
+        <NAME>Fail</NAME>
+        <VALUE>There are not clean source entities for this scenario</VALUE>
+      </VERIFICATION>
+      <DESC>
+      </DESC>
+      <OBJECT>
+      </OBJECT>
+      <OBJNAME>
+      </OBJNAME>
+      <METHOD>
+      </METHOD>
+      <ARGUMENTS>
+      </ARGUMENTS>
+      <IMAGE>15130TCID4.png</IMAGE>
+    </STEPS>
+  </TESTCASE>
+</RESULT>

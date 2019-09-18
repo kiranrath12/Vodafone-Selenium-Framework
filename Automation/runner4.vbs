@@ -1,0 +1,8 @@
+'msgbox WScript.Arguments.Item(0)
+Set objShell = CreateObject("WScript.Shell")
+Set objEnv = objShell.Environment("User")
+objEnv("Module") = WScript.Arguments.Item(0)
+objEnv("Environment") = WScript.Arguments.Item(1)
+'msgbox objEnv("Module")
+'msgbox objEnv("Environment")
+WScript.StdOut.WriteLine objEnv("Module") & " : " & objEnv("Environment")
